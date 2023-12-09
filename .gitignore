@@ -1,12 +1,14 @@
+# macOS system files
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# User-specific files and directories
 .CFUserTextEncoding
-.IdentityService/
-.aspnet/
 .bash_profile
 .config/
-.cups/
-.dotnet/
-.gitconfig
 .gretl/
 .gretl2rc
 .jupyter/
@@ -26,23 +28,29 @@
 .zprofile
 .zsh_history
 .zsh_sessions/
-Applications/
-Cisco Packet Tracer 8.2.0/
-Cisco Packet Tracer 8.2.1/
-Desktop/
-Downloads/
-IdeaProjects/
-Library/
-Movies/
-Music/
-Pictures/
-Projects/
-Public/
-Sites/
-VirtualBox VMs/
-course.yt/
-get-pip.py
-git/
+
+# JetBrains IDE files
+.idea/
+
+# Node.js and npm configuration
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Visual Studio Code settings
+.vscode/
+
+# macOS directories
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# JetBrains IDE error log
 jbr_err_pid4395.log
+
+# Other project-specific files
 mywebsite/
 photoofme.jpeg
