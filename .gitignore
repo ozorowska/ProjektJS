@@ -54,3 +54,5 @@ jbr_err_pid4395.log
 # Other project-specific files
 mywebsite/
 photoofme.jpeg
+
+.env
