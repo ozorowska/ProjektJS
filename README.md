@@ -1,2 +1,2 @@
 # ProjektJS
-Projekt na zaliczenie przedmiotu. 
+Projekt na zaliczenie przedmiotu. Test
