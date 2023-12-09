@@ -31,10 +31,24 @@ app.get('/calculate/:operation/:num1/:num2', (req, res) => {
     case 'power':
         result = Math.pow(parseFloat(num1), parseFloat(num2));
       break;
-        
+ 
     default:
       result = 'Invalid operation';
   }
 
   res.json({ result });
 });
+
+const mongoose = require('mongoose');
+
+const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/calculatorDB';
+
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
+
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'Błąd połączenia z MongoDB:'));
+db.once('open', () => {
+  console.log('Połączono z bazą danych');
+});
+
+
